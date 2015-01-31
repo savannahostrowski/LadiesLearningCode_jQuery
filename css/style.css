@@ -123,8 +123,6 @@ img.profile {
     width: 50%; /* makes the slider 50% of its container */
     margin: 0 auto; /* center aligns the slider */
 }
-
-
 /* CONTACT 
 -----------------------------------------*/
 .contact {
@@ -134,4 +132,3 @@ img.profile {
 .contact img {
 	margin: 20px;
 }
-
