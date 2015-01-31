@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+	<title>Savannah Ostrowski</title>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--jQuery -->
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<!-- Flexslider file -->
+<script src="js/jquery.flexslider-min.js"></script>
+	 <script text = "text/javascript">
+	 $(document).ready(function(){
+	 		$('.flexslider').flexslider({animationSpeed: 2000});
+	 		$('a[href*=#]:not([href=#])').click(function() {
+	 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	 		        var target = $(this.hash);
+	 		        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+	 		        if (target.length) {
+	 		            $('html,body').animate({
+	 		              scrollTop: target.offset().top
+	 		            }, 1000);
+	 		            return false;
+	 		        }
+	 		    }
+	 		});
+			$('.fav-img').width(200).height(200);
+			$('.fav-img').hover(function(){
+				$(this).animate({width: 300, height: 300}, 2000);
+			},
+			function(){
+				$(this).animate({width: 200, height: 200}, 1000);
+			});
+			$('.menu a').click(function(){
+				//this is what happens when a menu button is clicked
+				$('.active').removeClass('active');
+				$(this).addClass('active');
+			});
+		});
+	</script>
+			
+</head>
+<body>
+	<ul class="menu">
+		<li><a href="#about">About</a></li>
+		<li><a href="#favourites">Projects</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+
+	<section class="banner">
+		<img class="logo" src="images/logo.png">
+		<h1>Savannah Ostrowski</h1>
+	</section>
+
+	<section id="about" class="about container">
+		<h2>Nice to meet you. I'm Savannah</h2>
+		<img class="profile" src="images/sav-naples.jpg">
+		<p>I am 22 years old and I currently live in Canada. I am a mostly-self-taught programmer and formally trained spatial analyst. I am interested in learning about mobile application development and geovisualization. I am currently programming in JavaScript/jQuery, Python and Scheme.</p>
+	</section>
+
+	<section id="favourites" class="favourites container">
+		<h2>Projects</h2>
+		<h3>Here are a few things I have created</h3>
+	<div class="flexslider-wrap">
+		<div class="flexslider">
+		  <ul class="slides">
+		    <li><img src="images/sav-background.jpg"></li>
+		    <li><img src="images/contact.jpg"></li>
+		    <li><img src="images/william.jpg"></li>
+		  </ul>
+		</div>
+	</div>
+<!-- 		<img class="fav-img" src="images/sav-background.jpg">
+		<img class="fav-img" src="images/contact.jpg">
+		<img class="fav-img" src="images/william.jpg"> -->
+	</section>
+
+
+
+	<section id="contact" class="contact container">
+		<h2>Contact Me</h2>
+		<a href="http://twitter.com/llcodedotcom"><img src="images/twitter.png"></a>
+		<a href="http://www.facebook.com/ladieslearningcode"><img src="images/facebook.png"></a>
+		<a href="http://www.linkedin.com/company/ladies-learning-code"><img src="images/linkedin.png"></a>
+	</section>
+	
+	<!-- jQuery starts here -->
+
+</body>
+</html>
