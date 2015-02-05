@@ -36,6 +36,15 @@ h4 {
 	position:relative;
 }
 
+div{
+	display:block;
+}
+
+ul{
+	display:block;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end:0px;
+}
 
 /* PAGE MENU
 -----------------------------------------*/
@@ -115,7 +124,60 @@ img.profile {
 	text-align: center;
 }
 
+/* SKILLS
+-----------------------------------------*/
+.skills{
+	width: 100%;
+	padding-top: 70px;
+	padding-bottom: 80px;
+	margin-bottom: 0px;
+	padding-left: 15%;
+	padding-right: 15%;
+	overflow:hidden;
+	text-align: center;
+	z-index:1;
+}
+.skillone{
+	float:left;
+	width: 32.5%;
+	margin-right: 0.5%;
+	text-align: center;
+	margin-bottom: 50px;
+	transition: all 0.5s;
+}
 
+.skilltwo{
+	float:left;
+	width: 32.5%;
+	margin-right: 0.5%;
+	text-align: center;
+	margin-bottom: 50px;
+	transition: all 0.5s;
+}
+.skillthree{
+	float:left;
+	width: 32.5%;
+	margin-right: 0.5%;
+	text-align: center;
+	margin-bottom: 50px;
+	transition: all 0.5s;
+}
+.skillone ul li{
+	margin:0;
+	padding-bottom: 7px;
+	list-style-type:none;
+	text-align: -webkit-match-parent;
+}
+.skilltwo ul li{
+	margin:0;
+	padding-bottom: 7px;
+	list-style-type:none;
+}
+.skillthree ul li{
+	margin:0;
+	padding-bottom: 7px;
+	list-style-type:none;
+}
 /* FAVOURITES 
 -----------------------------------------*/
 .fav-img {
@@ -135,4 +197,5 @@ img.profile {
 }
 .contact img {
 	margin: 0px;
+	width:15%;
 }
