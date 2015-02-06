@@ -21,14 +21,15 @@ h1, h2, h3 {
 }
 p {
 	line-height: 1.4;
-	font-size: 15px;
+	font-size: 20px;
+	text-align:center;
 }
 .container {
 	padding: 50px 100px;
 }
 .container h2, 
 .container h3 {
-	color: #6494BF;
+	color: #444444;
 }
 
 h4 {
@@ -92,18 +93,11 @@ ul{
 
 /* BANNER 
 -----------------------------------------*/
-img.logo {
-	margin: 0 auto;
-	display: inline-block;
-	padding: 10px;
-}
 img.profile {
 	border: 1px solid grey;
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	padding: 5px;
-	float: left;
-	margin-right: 20px;
 }
 .banner {
 	padding-top: 250px;
@@ -134,6 +128,7 @@ img.profile {
 .about {
 	background: url('../images/tile1.png');
 	overflow: hidden;
+	text-align:center;
 }
 .about h2 {
 	text-align: center;
@@ -141,6 +136,7 @@ img.profile {
 .favourites {
 	text-align: center;
 }
+
 
 /* SKILLS
 -----------------------------------------*/
