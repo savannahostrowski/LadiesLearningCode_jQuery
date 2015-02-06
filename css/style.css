@@ -21,14 +21,15 @@ h1, h2, h3 {
 }
 p {
 	line-height: 1.4;
-	font-size: 15px;
+	font-size: 20px;
+	text-align:center;
 }
 .container {
 	padding: 50px 100px;
 }
 .container h2, 
 .container h3 {
-	color: #6494BF;
+	color: #444444;
 }
 
 h4 {
@@ -45,16 +46,29 @@ ul{
 	-webkit-margin-start: 0px;
 	-webkit-margin-end:0px;
 }
-
+ .nav {
+ 	width: 100%;
+ 	margin: 0;
+ 	position: fixed;
+ 	top:0px;
+ 	height: 65px;
+ 	z-index:999;
+ 	display:block;
+ 	background-color: white;
+ }
 /* PAGE MENU
 -----------------------------------------*/
+.stickyname{
+	padding-left:  40px;
+	padding-top: 0px;
+	font-size: 20px;
+}
 .menu {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	text-align: center;
 	border-bottom: 1px solid #434A5C;
-	background: #ffffff;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -79,28 +93,26 @@ ul{
 
 /* BANNER 
 -----------------------------------------*/
-img.logo {
-	margin: 0 auto;
-	display: inline-block;
-	padding: 10px;
-}
 img.profile {
 	border: 1px solid grey;
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 	padding: 5px;
-	float: left;
-	margin-right: 20px;
 }
 .banner {
 	padding-top: 250px;
 	padding-bottom: 250px;
 	max-width: 100%;
-	max-height: 10%;
-	background: url('../images/banner.jpg');
+	max-height: 100%;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/banner.jpg');
 	background-attachment: fixed;
 	color: #ffffff;
 	text-align: center;
+	height: 100%;
+    position:relative;
+    background-size: cover;
+    background-position: center;
+    z-index:-200;
 }
 .banner h1 {
 	text-transform: uppercase;
@@ -116,6 +128,7 @@ img.profile {
 .about {
 	background: url('../images/tile1.png');
 	overflow: hidden;
+	text-align:center;
 }
 .about h2 {
 	text-align: center;
@@ -123,6 +136,7 @@ img.profile {
 .favourites {
 	text-align: center;
 }
+
 
 /* SKILLS
 -----------------------------------------*/
